@@ -15,16 +15,49 @@
         <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
      </a>
     <nav class="nav">
-      <a href="./index.html" class="current">Studio</a> <a href="./">
-         <a href="#">Portfolio</a>
-        <a href="#">Contacts</a>
-      </nav>
-      <div class="contacts">
-        <a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a> 
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
-      </div>
-    </div>
-  </header>
+  <ul class="header__list">
+
+    <li class="header__item">
+      <a href="./index.html">Studio</a>
+    </li>
+
+    <li class="header__item">
+    <a href="./portfolio.html" class="current">Portfolio</a>
+   </li>
+    </li>
+     <li class="header__item"><a href="#">Contacts</a>
+    </li>
+  <li class="header__item header__item--dropdown">
+      <button class="filter-btn current">Filters</button>
+
+        <ul class="dropdown">
+        <li><a href="#">All</a></li>
+        <li><a href="#">Web sites</a></li>
+        <li><a href="#">Applications</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Marketing</a></li>
+
+      
+        <li class="dropdown__item">
+          <a href="#">Contacts</a>
+           <ul class="dropdown dropdown--right">
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380991111111">+380991111111</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+ </ul>
+</nav>
+<div class="contacts">
+  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+  <a href="tel:+380991111111">+38 099 111 11 11</a>
+</div>
+</header>
   <main>
     <section class="portfolio">
   <div class="container">
