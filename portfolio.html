@@ -7,7 +7,39 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<button class="sidebar-toggle" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
+<aside class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-item">
+<img src="./img/icon-home.svg" class="contact-icon-img" alt="Home">
+  <span>Home</span>
+</li>
+<li class="sidebar-item">
+<img src="./img/icon-profile.svg" class="contact-icon-img" alt="Profile">
+  <use href="./img/sprite.svg#profile"></use>
+<span>Profile</span>
+</li>
+<li class="sidebar-item">
+<img src="./img/icon-settings.svg" class="contact-icon-img" alt="Settings">
+  <use href="./img/sprite.svg#settings"></use>
+
+<span>Settings</span>
+</li>
+<li class="sidebar-item">
+<img src="./img/icon-contacts.svg" class="contact-icon-img" alt="Contacts">
+  <use href="./img/sprite.svg#contacts"></use>
+<span>Contacts</span>
+ </li>   
+   
+  
+  </ul>
+</aside>
+<div class="page">
   <!-- HEADER -->
   <header class="header">
     <div class="container header__inner">
@@ -28,7 +60,7 @@
      <li class="header__item"><a href="#">Contacts</a>
     </li>
   <li class="header__item header__item--dropdown">
-      <button class="filter-btn current">Filters</button>
+      <button class="filter-btn current" style="color: fff;">Filters</button>
 
         <ul class="dropdown">
         <li><a href="#">All</a></li>
@@ -41,17 +73,25 @@
         <li class="dropdown__item">
           <a href="#">Contacts</a>
            <ul class="dropdown dropdown--right">
-            <li>
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
+            
+              <li class="contact-item">
+               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+               <div class="contact-preview">
+    <img src="img/email.jpg" alt="Email">
+  </div>
+</li>
+              
+          <li class="contact-item">
               <a href="tel:+380991111111">+380991111111</a>
+              <div class="contact-preview">
+    <img src="img/phone.jpg" alt="Phone">
+  </div>
             </li>
           </ul>
         </li>
       </ul>
-    </li>
- </ul>
+  </li>
+ 
 </nav>
 <div class="contacts">
   <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -233,7 +273,21 @@
         <a href="tel:+380991111111">+38 099 111 11 11</a>
       </address>
     </div>
+    </div>
   </footer>
+<body>
+
+  <script>
+  const btn = document.querySelector('.sidebar-toggle');
+  const body = document.body;
+
+  btn.addEventListener('click', () => {
+    body.classList.toggle('sidebar-open');
+  });
+</script>
+
+
+</body>
 
 </body>
 </html>
