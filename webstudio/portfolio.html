@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<button class="sidebar-toggle" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<aside class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-item">
+<img src="./img/icon-home.svg" class="contact-icon-img" alt="Home">
+  <span>Home</span>
+</li>
+<li class="sidebar-item">
+<img src="./img/icon-profile.svg" class="contact-icon-img" alt="Profile">
+  <use href="./img/sprite.svg#profile"></use>
+<span>Profile</span>
+</li>
+<li class="sidebar-item">
+<img src="./img/icon-settings.svg" class="contact-icon-img" alt="Settings">
+  <use href="./img/sprite.svg#settings"></use>
+
+<span>Settings</span>
+</li>
+<li class="sidebar-item">
+<img src="./img/icon-contacts.svg" class="contact-icon-img" alt="Contacts">
+  <use href="./img/sprite.svg#contacts"></use>
+<span>Contacts</span>
+ </li>   
+   
+  
+  </ul>
+</aside>
+<div class="page">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
+     </a>
+    <nav class="nav">
+  <ul class="header__list">
+
+    <li class="header__item">
+      <a href="./index.html">Studio</a>
+    </li>
+
+    <li class="header__item">
+    <a href="./portfolio.html" class="current">Portfolio</a>
+   </li>
+    </li>
+     <li class="header__item"><a href="#">Contacts</a>
+    </li>
+  <li class="header__item header__item--dropdown">
+      <button class="filter-btn current" style="color: fff;">Filters</button>
+
+        <ul class="dropdown">
+        <li><a href="#">All</a></li>
+        <li><a href="#">Web sites</a></li>
+        <li><a href="#">Applications</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Marketing</a></li>
+
+      
+        <li class="dropdown__item">
+          <a href="#">Contacts</a>
+           <ul class="dropdown dropdown--right">
+            
+              <li class="contact-item">
+               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+               <div class="contact-preview">
+    <img src="img/email.jpg" alt="Email">
+  </div>
+</li>
+              
+          <li class="contact-item">
+              <a href="tel:+380991111111">+380991111111</a>
+              <div class="contact-preview">
+    <img src="img/phone.jpg" alt="Phone">
+  </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  </li>
+ 
+</nav>
+<div class="contacts">
+  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+  <a href="tel:+380991111111">+38 099 111 11 11</a>
+</div>
+<button class="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+</header>
+<nav class="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li><a href="index.html">Studio</a></li>
+    <li><a href="portfolio.html" class="current">Portfolio</a></li>
+    <li><a href="#">Contacts</a></li>
+  </ul>
+
+  <div class="mobile-contacts">
+    <a href="tel:+380991111111">+38 099 111 11 11</a>
+    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+  </div>
+</nav>
+
+  <main>
+    <section class="portfolio">
+  <div class="container">
+
+    <ul class="portfolio__filters">
+      <li><button class="filter-btn active">All</button></li>
+      <li><button class="filter-btn">Web sites</button></li>
+      <li><button class="filter-btn">Applications</button></li>
+      <li><button class="filter-btn">Design</button></li>
+      <li><button class="filter-btn">Marketing</button></li>
+    </ul>
+
+<ul class="portfolio__list">
+
+  <li class="portfolio__item">
+    <div class="portfolio__thumb">
+    <img src="img/img.png" alt="Technoquack" width="370"> 
+     <div class="portfolio__overlay">
+      <p class="overlay__text">
+       Technoguck is a state-of-the-art web platform designed to simplify
+          business processes and enhance productivity.
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__content">
+      <h3>Technoquack</h3>
+      <p>Web sites</p>
+      </div>
+  </li>
+
+  <li class="portfolio__item">
+    <div class="portfolio__thumb">
+     <img src="img/img(1).png" alt="Poster" width="370">
+     <div class="portfolio__overlay">
+      <p class="overlay__text">
+        Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+      </p>
+    </div>
+  </div>   
+   <div class="portfolio__content">
+      <h3>Poster New Orlean vs Colden Star</h3>
+      <p>Design</p>
+      </div>
+  </li>
+
+  <li class="portfolio__item">
+   <div class="portfolio__thumb"> 
+    <img src="img/img(2).png" alt="Restaurant" width="370">
+    <div class="portfolio__overlay">
+      <p class="overlay__text">
+        Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+      </p>
+    </div>
+   </div>
+    <div class="portfolio__content">
+      <h3>Restaurant Seafood</h3>
+      <p>Applications</p>
+        </div>
+   </li>
+
+  <li class="portfolio__item">
+    <div class="portfolio__thumb">   
+    <img src="img/img(3).png" alt="Project Prime" width="370">
+    <div class="portfolio__overlay">
+    <p class="overlay__text">
+      Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+      </p>
+    </div>
+  </div>
+    <div class="portfolio__content">
+            <h3>Project Prime</h3>
+            <p>Marketing</p>
+            </div>
+        </li>
+
+  <li class="portfolio__item">
+    <div class="portfolio__thumb">  
+     <img src="img/img(4).png" alt="Project Boxes" width="370">
+     <div class="portfolio__overlay">
+      <p class="overlay__text">
+        Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+      </p>
+     </div>
+   </div>
+     <div class="portfolio__content">
+            <h3>Project Boxes</h3>
+            <p>Applications</p>
+          </div>
+        </li>
+
+  <li class="portfolio__item">
+   <div class="portfolio__thumb">   
+   <img src="img/img(5).png" alt="Inspiration" width="370"> 
+    <div class="portfolio__overlay">
+    <p class="overlay__text">
+      Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+     </p>
+    </div>
+  </div>
+    <div class="portfolio__content">
+            <h3>Inspiration has no Borders</h3>
+            <p>Web sites</p>
+          </div>
+        </li>
+
+  <li class="portfolio__item">
+   <div class="portfolio__thumb">   
+    <img src="img/img(6).png" alt="Edition" width="370">
+    <div class="portfolio__overlay">
+    <p class="overlay__text">
+      Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+     </p>
+    </div>
+  </div>
+      <div class="portfolio__content">
+            <h3>Edition Limited Edition</h3>
+            <p>Desing</p>
+          </div>
+        </li>
+
+  <li class="portfolio__item">
+   <div class="portfolio__thumb">  
+    <img src="img/img(7).png" alt="Project" width="370">
+     <div class="portfolio__overlay">
+     <p class="overlay__text">
+      Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+     </p>
+    </div>
+  </div>
+      <div class="portfolio__content">
+          <h3>Project LAB</h3>
+            <p>Marketing</p>
+           </div>
+      </li>
+
+  <li class="portfolio__item">
+    <div class="portfolio__thumb">   
+    <img src="img/img(8).png" alt="Growing" width="370">
+    <div class="portfolio__overlay">
+      <p class="overlay__text">
+        Technoguck is a state-of-the-art web platform designed to simplify
+              business processes and enhance productivity.
+      </p>
+     </div>
+  </div>
+      <div class="portfolio__content">
+          <h3>Growing Business</h3>
+            <p>Applications</p>
+            </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer-left">
+      <a href="#" class="logo">
+        <span class="logo__web">Web</span><span class="logo__studio">Studio</span>
+    </a>
+      <address>
+        <p>Kharkiv, Pobedy Ave., 26</p>
+        <a href="mailto:info@webstudio.com">info@devstudio.com</a><br>
+        <a href="tel:+380991111111">+38 099 111 11 11</a>
+      </address>
+   </div>
+
+   <div class="footer__right">
+    <p class="footer__title">JOIN US</p>
+    
+      <ul class="socials features__social-list">
+        <li>
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="20" height="20">
+              <use href="#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+<body>
+
+ <script>
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.mobile-menu');
+const links = document.querySelectorAll('.mobile-menu a');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
+});
+
+/* закрытие при клике по пункту */
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('is-open');
+  });
+});
+</script>
+
+
+</body>
+
+</body>
+</html>
+
+
+
+                    
+                    
+                  
