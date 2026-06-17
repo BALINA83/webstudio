@@ -1,6 +1,7 @@
 # WebStudio â€“ Business Landing Page
 
-í¼ **Live Demo:** https://balina83.github.io/webstudio/
+ğŸŒ **Live Demo:** https://balina83.github.io/webstudio/webstudio/  
+ğŸ“ **GitHub Repository:** https://github.com/BALINA83/webstudio
 
 ---
 
@@ -47,3 +48,4 @@ Junior Front-End Developer
 
 - GitHub: https://github.com/BALINA83
 - Portfolio: https://balina83.github.io/portfolio/
+- LinkedIn: https://www.linkedin.com/in/alina-bezsonova-dev
